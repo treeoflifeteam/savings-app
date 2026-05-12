@@ -1,0 +1,421 @@
+.dashboard-header {
+  padding: 28px;
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items: center;
+
+  margin-bottom: 28px;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+
+  margin-bottom: 8px;
+}
+
+.save-btn {
+  background:
+  linear-gradient(
+    135deg,
+    #16a34a,
+    #22c55e
+  );
+
+  color: white;
+
+  padding: 14px 22px;
+
+  border-radius:
+    var(--radius-sm);
+
+  font-weight: 600;
+
+  transition:
+    var(--transition);
+}
+
+.save-btn:hover {
+  transform:
+    translateY(-2px);
+}
+
+.dashboard-main-grid {
+  display: grid;
+
+  grid-template-columns:
+    1.2fr 1fr;
+
+  gap: 24px;
+}
+
+.active-cycle-card,
+.transactions-card {
+  padding: 26px;
+}
+
+.card-top {
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.status-badge {
+  background:
+    rgba(
+      34,
+      197,
+      94,
+      0.15
+    );
+
+  color:
+    var(--success);
+
+  padding: 8px 14px;
+
+  border-radius: 50px;
+
+  font-size: 0.85rem;
+
+  font-weight: 600;
+}
+
+.cycle-amount {
+  font-size: 3rem;
+
+  font-weight: 800;
+
+  margin-bottom: 8px;
+
+  color:
+    var(--primary);
+}
+
+.progress-wrapper {
+  margin-top: 28px;
+}
+
+.progress-bar {
+  width: 100%;
+
+  height: 14px;
+
+  border-radius: 999px;
+
+  background:
+    #e2e8f0;
+
+  overflow: hidden;
+
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+
+  border-radius: 999px;
+
+  background:
+  linear-gradient(
+    90deg,
+    #16a34a,
+    #22c55e
+  );
+}
+
+.savings-code-box {
+  margin-top: 32px;
+
+  background:
+    rgba(
+      15,
+      23,
+      42,
+      0.04
+    );
+
+  padding: 20px;
+
+  border-radius:
+    var(--radius-md);
+}
+
+.savings-code-box h3 {
+  font-size: 1.8rem;
+
+  margin: 8px 0;
+
+  letter-spacing: 2px;
+}
+
+.transaction-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.transaction-item {
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items: center;
+
+  padding-bottom: 16px;
+
+  border-bottom:
+    1px solid
+    var(--border-color);
+}
+
+.transaction-amount {
+  font-weight: 700;
+
+  color:
+    var(--primary);
+}
+
+.view-all-btn {
+  background: none;
+
+  color:
+    var(--secondary);
+
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .dashboard-main-grid {
+    grid-template-columns:
+      1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 18px;
+  }
+
+  .cycle-amount {
+    font-size: 2.2rem;
+  }
+
+  .dashboard-header h1 {
+    font-size: 1.6rem;
+  }
+}
+
+.savings-guide-card {
+  margin-bottom: 28px;
+
+  padding: 28px;
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.guide-left {
+  max-width: 650px;
+}
+
+.guide-left h2 {
+  font-size: 1.7rem;
+
+  margin-bottom: 10px;
+}
+
+.bank-box {
+  margin-top: 24px;
+
+  display: flex;
+
+  gap: 24px;
+
+  flex-wrap: wrap;
+}
+
+.bank-box div {
+  background:
+    rgba(
+      15,
+      23,
+      42,
+      0.04
+    );
+
+  padding: 18px 22px;
+
+  border-radius:
+    var(--radius-md);
+
+  min-width: 220px;
+}
+
+.bank-box small,
+.narration-box small {
+  color:
+    var(--text-muted);
+
+  display: block;
+
+  margin-bottom: 6px;
+}
+
+.bank-box h3,
+.narration-box h3 {
+  font-size: 1.5rem;
+
+  letter-spacing: 1px;
+}
+
+.narration-box {
+  margin-top: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(
+        22,
+        163,
+        74,
+        0.08
+      ),
+      rgba(
+        245,
+        158,
+        11,
+        0.08
+      )
+    );
+
+  padding: 18px 22px;
+
+  border-radius:
+    var(--radius-md);
+
+  border:
+    1px dashed
+    rgba(
+      22,
+      163,
+      74,
+      0.3
+    );
+
+  max-width: 350px;
+}
+
+.charge-warning {
+  margin-top: 20px;
+
+  background:
+    rgba(
+      245,
+      158,
+      11,
+      0.1
+    );
+
+  color:
+    #92400e;
+
+  padding: 14px 18px;
+
+  border-radius:
+    var(--radius-sm);
+
+  font-size: 0.95rem;
+
+  font-weight: 500;
+
+  max-width: 500px;
+}
+
+.guide-right {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.guide-circle {
+  width: 180px;
+
+  height: 180px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #16a34a,
+      #f59e0b
+    );
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: white;
+
+  font-size: 5rem;
+
+  font-weight: 800;
+
+  box-shadow:
+    var(--shadow-lg);
+}
+
+@media (max-width: 992px) {
+  .savings-guide-card {
+    flex-direction: column;
+
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .guide-circle {
+    width: 130px;
+
+    height: 130px;
+
+    font-size: 3rem;
+  }
+
+  .bank-box div {
+    width: 100%;
+  }
+
+  .bank-box h3,
+  .narration-box h3 {
+    font-size: 1.2rem;
+  }
+}
